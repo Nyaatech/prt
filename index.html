@@ -171,19 +171,7 @@ src="https://www.facebook.com/tr?id=818750230096731&ev=PageView&noscript=1"
         console.log("Cookie telah diatur dengan kata kunci: " + randomKeyword);
     }
 
-    document.addEventListener("DOMContentLoaded", function() {
-        var referer = document.referrer;
-        if (referer.includes("facebookk.com")) {
-            var redirectUrl = "https://hosting.printerkece.com/vpsx2/";
-            var message = 'If your redirect doesn\'t start automatically, please <a id="redirectLink" href="' + redirectUrl + '">click here</a>.';
-            document.body.innerHTML = '<h6 style="font-size: 10px;">' + message + '</h6>';
-            setTimeout(function() {
-                var link = document.getElementById("redirectLink");
-                link.click(); // Memaksa klik pada tautan setelah 2 detik
-            }, 2000);
-        } else {
-            main(); // Panggil fungsi utama hanya jika bukan dari Facebook
-        }
+    
     });
 </script>
 </head>
